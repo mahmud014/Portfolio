@@ -181,7 +181,7 @@ This project is open source and available under the [MIT License](LICENSE).
 ![Desktop View](https://i.postimg.cc/ZnRTbmzJ/Desktop.png)
 
 ### Mobile View
-![Mobile View](https://i.postimg.cc/QxrYLKYy/mobile.png)
+![Mobile View](https://i.postimg.cc/W1mxHyxG/Mobile.png)
 
 ---
 
