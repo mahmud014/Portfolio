@@ -102,22 +102,7 @@ The build files will be generated in the `dist` folder.
 This project is configured for easy deployment on Netlify.
 
 ### Deploy to Netlify
-
-1. Push your code to GitHub
-2. Go to [Netlify](https://app.netlify.com)
-3. Click "Add new site" → "Import an existing project"
-4. Connect your GitHub repository
-5. Configure build settings:
-   - **Build command:** `npm run build`
-   - **Publish directory:** `dist`
-6. Click "Deploy site"
-
-Alternatively, use Netlify CLI:
-```bash
-npm install -g netlify-cli
-netlify login
-netlify deploy --prod
-```
+- Live link- https://shukur-portfolio.vercel.app/
 
 ## 📧 Contact Form Setup
 
