@@ -32,12 +32,12 @@ const About = () => {
           
           {/* Decorative circles */}
           <motion.div 
-            className="absolute top-10 left-10 w-32 h-32 border-2 border-secendary rounded-full"
+            className="absolute top-10 left-10 w-32 h-32 border-2 border-secondary rounded-full"
             animate={{ rotate: 360 }}
             transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
           />
           <motion.div 
-            className="absolute bottom-10 right-10 w-24 h-24 border-2 border-primary rounded-full"
+            className="absolute bottom-10 right-10 w-24 h-24 border-2 border-secondary rounded-full"
             animate={{ rotate: -360 }}
             transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
           />
