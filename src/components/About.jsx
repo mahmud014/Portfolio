@@ -198,7 +198,7 @@ const About = () => {
             </motion.div>
 
             <motion.a 
-              className="flex cursor-pointer items-center gap-2 bg-primary text-[#0d2426] font-semibold px-6 py-3 rounded-full shadow-lg" 
+              className="flex cursor-pointer items-center gap-2 bg-secondary text-primary font-semibold px-6 py-3 rounded-full shadow-lg" 
               href="https://drive.google.com/file/d/14caD1rlRM_QEF0NfG7xy_kat3-C9Eczm/view?usp=sharing" 
               target="_blank" 
               rel="noopener noreferrer"

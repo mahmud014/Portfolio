@@ -92,7 +92,7 @@ function Header() {
           </button>
         </div>
         <div className="flex items-center space-x-4">
-          <a className="bg-primary text-[#1f2937] font-semibold px-6 py-3 rounded-full shadow-lg hover:scale-105 transition-all" href="https://drive.google.com/file/d/14caD1rlRM_QEF0NfG7xy_kat3-C9Eczm/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+          <a className="bg-secondary text-primary font-semibold px-6 py-3 rounded-full shadow-lg hover:scale-105 transition-all" href="https://drive.google.com/file/d/14caD1rlRM_QEF0NfG7xy_kat3-C9Eczm/view?usp=sharing" target="_blank" rel="noopener noreferrer">
             Download CV
           </a>
           <button className="lg:hidden p-2">

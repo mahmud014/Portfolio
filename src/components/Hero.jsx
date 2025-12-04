@@ -81,7 +81,7 @@ function Hero() {
           >
             <motion.button
               onClick={() => scrollToSection('contact')}
-              className="bg-primary text-[#0d2426] font-semibold px-8 py-3 rounded-full shadow-lg"
+              className="bg-secondary text-primary font-semibold px-8 py-3 rounded-full shadow-lg"
               whileHover={{ scale: 1.05, boxShadow: '0 10px 30px rgba(174, 255, 114, 0.3)' }}
               whileTap={{ scale: 0.95 }}
               transition={{ type: 'spring', stiffness: 400, damping: 17 }}
