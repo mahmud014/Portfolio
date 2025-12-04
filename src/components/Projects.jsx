@@ -102,13 +102,13 @@ const Projects = () => {
         transition={{ duration: 0.6 }}
       >
         <motion.div 
-          className="inline-flex items-center gap-2 bg-primary/20 px-4 py-2 rounded-full mb-6"
+          className="inline-flex items-center gap-2 bg-secondary/20 px-4 py-2 rounded-full mb-6"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
           transition={{ duration: 0.5 }}
         >
           <motion.span 
-            className="w-2 h-2 bg-primary rounded-full"
+            className="w-2 h-2 bg-secondary rounded-full"
             animate={{
               scale: [1, 1.5, 1],
               opacity: [1, 0.5, 1],
