@@ -77,7 +77,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-gray-300 text-sm">
-            © 2024 Shukur. All rights reserved.
+            Copyright © {new Date().getFullYear()} Shukur. All rights reserved.
           </p>
           <p className="text-gray-300 text-sm flex items-center gap-2">
             Made with <FaHeart className="text-secondary" /> by Shukur
