@@ -42,7 +42,7 @@ const About = () => {
             transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
           />
           <motion.div 
-            className="absolute top-1/2 left-0 w-3 h-3 bg-primary rounded-full"
+            className="absolute top-1/2 left-0 w-3 h-3 bg-secondary rounded-full"
             animate={{
               scale: [1, 1.5, 1],
               opacity: [1, 0.5, 1],
@@ -94,7 +94,7 @@ const About = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
           >
             <motion.span 
-              className="w-2 h-2 bg-primary rounded-full"
+              className="w-2 h-2 bg-secondary rounded-full"
               animate={{
                 scale: [1, 1.5, 1],
                 opacity: [1, 0.5, 1],
@@ -147,10 +147,10 @@ const About = () => {
               transition={{ duration: 0.3 }}
             >
               <motion.div 
-                className="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center"
+                className="w-12 h-12 bg-secondary/20 rounded-lg flex items-center justify-center"
                 whileHover={{ scale: 1.1, rotate: 5 }}
               >
-                <FaEnvelope className="text-primary text-xl" />
+                <FaEnvelope className="text-secondary text-xl" />
               </motion.div>
               <div>
                 <p className="text-sm text-gray-500 dark:text-gray-400">Email Us At</p>
@@ -164,10 +164,10 @@ const About = () => {
               transition={{ duration: 0.3 }}
             >
               <motion.div 
-                className="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center"
+                className="w-12 h-12 bg-secondary/20 rounded-lg flex items-center justify-center"
                 whileHover={{ scale: 1.1, rotate: 5 }}
               >
-                <FaPhone className="text-primary text-xl" />
+                <FaPhone className="text-secondary text-xl" />
               </motion.div>
               <div>
                 <p className="text-sm text-gray-500 dark:text-gray-400">Phone Number</p>

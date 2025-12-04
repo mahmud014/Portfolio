@@ -99,10 +99,10 @@ const Contact = () => {
               transition={{ duration: 0.3 }}
             >
               <motion.div 
-                className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center flex-shrink-0"
+                className="w-12 h-12 bg-secondary/20 rounded-full flex items-center justify-center flex-shrink-0"
                 whileHover={{ scale: 1.1, rotate: 5 }}
               >
-                <FaMapMarkerAlt className="text-primary text-xl" />
+                <FaMapMarkerAlt className="text-secondary text-xl" />
               </motion.div>
               <div>
                 <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-1">Address</h3>
@@ -118,10 +118,10 @@ const Contact = () => {
               transition={{ duration: 0.3 }}
             >
               <motion.div 
-                className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center flex-shrink-0"
+                className="w-12 h-12 bg-secondary/20 rounded-full flex items-center justify-center flex-shrink-0"
                 whileHover={{ scale: 1.1, rotate: 5 }}
               >
-                <FaPhone className="text-primary text-xl" />
+                <FaPhone className="text-secondary text-xl" />
               </motion.div>
               <div>
                 <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-1">Phone Number</h3>
