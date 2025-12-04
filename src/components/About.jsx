@@ -37,7 +37,7 @@ const About = () => {
             transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
           />
           <motion.div 
-            className="absolute bottom-10 right-10 w-24 h-24 border-2 border-primary/30 rounded-full"
+            className="absolute bottom-10 right-10 w-24 h-24 border-2 border-primary rounded-full"
             animate={{ rotate: -360 }}
             transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
           />
