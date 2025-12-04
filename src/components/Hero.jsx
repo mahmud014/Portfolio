@@ -30,10 +30,10 @@ function Hero() {
               hidden: { opacity: 0, x: -50 },
               visible: { opacity: 1, x: 0, transition: { duration: 0.6 } },
             }}
-            className="inline-flex items-center space-x-2 text-sm font-medium text-gray-600 dark:text-gray-300 bg-gray-100 dark:bg-primary/20 px-4 py-2 rounded-full"
+            className="inline-flex items-center space-x-2 text-sm font-medium text-gray-600 dark:text-gray-300 bg-gray-100 dark:bg-secondary/20 px-4 py-2 rounded-full"
           >
             <motion.span
-              className="w-2 h-2 bg-primary rounded-full"
+              className="w-2 h-2 bg-secondary rounded-full"
               animate={{
                 scale: [1, 1.5, 1],
                 opacity: [1, 0.5, 1],
