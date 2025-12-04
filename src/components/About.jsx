@@ -114,7 +114,7 @@ const About = () => {
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.6, delay: 0.4 }}
           >
-            Who is <span className="text-primary">Shukur</span>?
+            Who is <span className="text-secondary">Shukur</span>?
           </motion.h2>
 
           <motion.p 
@@ -187,7 +187,7 @@ const About = () => {
               whileHover={{ scale: 1.1 }}
             >
               <motion.p 
-                className="text-5xl font-bold text-primary"
+                className="text-5xl font-bold text-secondary"
                 initial={{ scale: 0 }}
                 animate={isInView ? { scale: 1 } : { scale: 0 }}
                 transition={{ duration: 0.5, delay: 0.9, type: "spring" }}

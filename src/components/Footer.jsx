@@ -15,7 +15,7 @@ const Footer = () => {
           {/* Brand */}
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center gap-2 mb-4">
-              <span className="text-2xl text-primary font-bold">Shukur.</span>
+              <span className="text-2xl text-secondary font-bold">Shukur.</span>
             </div>
             <p className="text-gray-300 mb-4 max-w-md">
               Fresh graduate passionate about creating beautiful web experiences. Let's build something amazing together!

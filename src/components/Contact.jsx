@@ -74,7 +74,7 @@ const Contact = () => {
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              Get in touch to discuss your <span className="text-primary">next project</span>
+              Get in touch to discuss your <span className="text-secondary">next project</span>
             </motion.h2>
             
             <motion.p 

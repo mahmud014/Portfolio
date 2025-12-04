@@ -23,12 +23,12 @@ const SkillsMarquee = () => {
         {skills.map((skill, index) => (
           <div key={index} className="flex items-center gap-8 mx-4">
             <div className="flex items-center gap-4 bg-primary/20 px-6 py-3 rounded-full">
-              <span className="text-primary">{skill.icon}</span>
-              <span className="text-primary font-bold text-xl whitespace-nowrap uppercase tracking-wide">
+              <span className="text-primary dark:text-primary">{skill.icon}</span>
+              <span className="text-primary dark:text-primary font-bold text-xl whitespace-nowrap uppercase tracking-wide">
                 {skill.name}
               </span>
             </div>
-            <span className="text-primary text-2xl">✦</span>
+            <span className="text-primary dark:text-primary text-2xl">✦</span>
           </div>
         ))}
       </Marquee>
