@@ -32,7 +32,7 @@ const About = () => {
           
           {/* Decorative circles */}
           <motion.div 
-            className="absolute top-10 left-10 w-32 h-32 border-2 border-primary/30 rounded-full"
+            className="absolute top-10 left-10 w-32 h-32 border-2 border-secendary/30 rounded-full"
             animate={{ rotate: 360 }}
             transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
           />
@@ -88,7 +88,7 @@ const About = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
         >
           <motion.div 
-            className="inline-flex items-center gap-2 bg-secendary/20 px-4 py-2 rounded-full"
+            className="inline-flex items-center gap-2 bg-primary/20 px-4 py-2 rounded-full"
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.6, delay: 0.3 }}
