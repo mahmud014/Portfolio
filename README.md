@@ -178,7 +178,7 @@ This project is open source and available under the [MIT License](LICENSE).
 ## 📸 Screenshots
 
 ### Desktop View
-![Desktop View](https://i.postimg.cc/9FLNyqYL/desktop.png)
+![Desktop View](https://i.postimg.cc/ZnRTbmzJ/Desktop.png)
 
 ### Mobile View
 ![Mobile View](https://i.postimg.cc/QxrYLKYy/mobile.png)
