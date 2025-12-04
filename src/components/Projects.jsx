@@ -204,7 +204,7 @@ const Projects = () => {
                 <div className="flex gap-4">
                   <motion.a 
                     href={project.github} 
-                    className="flex items-center gap-2 bg-secendary text-[#0d2426] px-4 py-2 rounded-full font-semibold"
+                    className="flex items-center gap-2 bg-primary text-white px-4 py-2 rounded-full font-semibold"
                     whileHover={{ scale: 1.05, boxShadow: "0 5px 15px rgba(13, 36, 38, 0.3)" }}
                     whileTap={{ scale: 0.95 }}
                   >
