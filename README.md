@@ -2,7 +2,7 @@
 
 A modern, responsive portfolio website built with React, showcasing my skills, projects, and experience as a Full-Stack Developer.
 
-![Portfolio Preview](https://i.postimg.cc/9FLNyqYL/desktop.png)
+![Portfolio Preview](https://i.postimg.cc/ZnRTbmzJ/Desktop.png)
 
 ![Portfolio Preview](https://img.shields.io/badge/Status-Live-success)
 ![React](https://img.shields.io/badge/React-18.2.0-blue)
