@@ -37,7 +37,7 @@ function Header() {
     <header className="w-full max-w-7xl mx-auto py-6 sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
       <nav className="flex justify-between items-center">
         <div className="flex items-center space-x-2">
-          <span className="text-2xl font-bold text-gray-900 dark:text-primary">Shukur.</span>
+          <span className="text-2xl font-bold text-gray-900 text-primary">Shukur.</span>
         </div>
         <div className="hidden lg:flex items-center space-x-6 text-gray-600 dark:text-gray-300">
           <button 
