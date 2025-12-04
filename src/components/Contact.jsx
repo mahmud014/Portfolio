@@ -148,7 +148,7 @@ const Contact = () => {
                   d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0"
                   fill="none"
                 />
-                <text className="text-[8px] fill-primary group-hover:fill-[#0d2426] font-semibold uppercase tracking-wider transition-all">
+                <text className="text-[8px] fill-primary group-hover:fill-white font-semibold uppercase tracking-wider transition-all">
                   <textPath href="#circlePath">
                     • MY RESUME • MY RESUME • MY RESUME • MY RESUME
                   </textPath>
@@ -246,7 +246,7 @@ const Contact = () => {
             <motion.button 
               type="submit" 
               disabled={isSubmitting}
-              className="bg-primary text-[#0d2426] font-bold px-8 py-4 rounded-full disabled:opacity-50 disabled:cursor-not-allowed"
+              className="bg-secondary text-primary font-bold px-8 py-4 rounded-full disabled:opacity-50 disabled:cursor-not-allowed"
               whileHover={{ scale: 1.05, boxShadow: "0 10px 30px rgba(174, 255, 114, 0.3)" }}
               whileTap={{ scale: 0.95 }}
             >
