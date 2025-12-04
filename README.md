@@ -2,6 +2,8 @@
 
 A modern, responsive portfolio website built with React, showcasing my skills, projects, and experience as a Full-Stack Developer.
 
+![Portfolio Preview](https://i.postimg.cc/9FLNyqYL/desktop.png)
+
 ![Portfolio Preview](https://img.shields.io/badge/Status-Live-success)
 ![React](https://img.shields.io/badge/React-18.2.0-blue)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.4.0-38bdf8)
@@ -191,10 +193,10 @@ This project is open source and available under the [MIT License](LICENSE).
 ## 📸 Screenshots
 
 ### Desktop View
-![Desktop View](https://via.placeholder.com/800x400?text=Add+Your+Screenshot)
+![Desktop View](https://i.postimg.cc/9FLNyqYL/desktop.png)
 
 ### Mobile View
-![Mobile View](https://via.placeholder.com/400x800?text=Add+Your+Screenshot)
+![Mobile View](https://i.postimg.cc/QxrYLKYy/mobile.png)
 
 ---
 
