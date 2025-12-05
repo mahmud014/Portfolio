@@ -37,7 +37,7 @@ function Header() {
   }, [])
 
   return (
-    <header className="w-full max-w-7xl mx-auto py-6 sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+    <header className="w-full max-w-7xl mx-auto px-4 py-6 sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
       <nav className="flex justify-between items-center">
         <div className="flex items-center space-x-2">
           <span className="text-2xl font-bold text-gray-900 dark:text-white">Shukur.</span>

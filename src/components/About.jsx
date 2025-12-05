@@ -192,7 +192,7 @@ const About = () => {
                 animate={isInView ? { scale: 1 } : { scale: 0 }}
                 transition={{ duration: 0.5, delay: 0.9, type: "spring" }}
               >
-                0+
+                1+
               </motion.p>
               <p className="text-gray-600 dark:text-gray-400 font-medium mt-2">Years Experience</p>
             </motion.div>

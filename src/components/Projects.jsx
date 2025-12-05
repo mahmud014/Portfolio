@@ -16,80 +16,80 @@ const Projects = () => {
       description: "Personal portfolio built with React and Tailwind CSS. Features smooth animations and responsive design.",
       tech: ["React", "Tailwind", "Framer Motion"],
       image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
-      github: "#",
-      live: "#"
+      github: "https://github.com/mahmud014/Portfolio",
+      live: "https://shukur-portfolio.vercel.app"
     },
     {
       title: "Todo App",
       description: "Simple task management app with CRUD operations. Learning project to practice React hooks and state management.",
       tech: ["React", "JavaScript", "CSS"],
       image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=600&fit=crop",
-      github: "#",
-      live: "#"
+      github: "https://github.com/mahmud014/app-aplication",
+      live: "https://quantumcode-aplication.vercel.app"
     },
     {
-      title: "Weather App",
-      description: "Weather forecast application using OpenWeather API. Displays current weather and 5-day forecast.",
+      title: "Book App",
+      description: "Discover, read, and organize your favorite books with categories, ratings, and personalized reading lists.",
       tech: ["React", "API", "Tailwind"],
-      image: "https://images.unsplash.com/photo-1592210454359-9043f067919b?w=800&h=600&fit=crop",
-      github: "#",
-      live: "#"
+      image: "https://i.ibb.co.com/dwYMP3NZ/istockphoto-1313532517-612x612.jpg",
+      github: "https://github.com/mahmud014/book-vibe",
+      live: "https://book-vibe-chi.vercel.app/"
     },
     {
       title: "E-commerce Store",
       description: "Full-stack e-commerce platform with shopping cart, payment integration, and admin dashboard.",
       tech: ["React", "Node.js", "MongoDB"],
       image: "https://images.unsplash.com/photo-1557821552-17105176677c?w=800&h=600&fit=crop",
-      github: "#",
-      live: "#"
+      github: "https://github.com/mahmud014/Shoporo-next-app",
+      live: "https://shoporo-next-app.vercel.app/"
     },
     {
-      title: "Blog Platform",
-      description: "Modern blogging platform with markdown support, comments, and user authentication.",
-      tech: ["Next.js", "Tailwind", "Firebase"],
-      image: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=800&h=600&fit=crop",
-      github: "#",
-      live: "#"
+      title: "News Portal App",
+      description: "A modern news portal providing real-time headlines, category-based news, detailed articles, and a clean reading experience.",
+      tech: ["React", "Firebase", "Tailwind"],
+      image: "https://i.ibb.co.com/xSgL5DWL/istockphoto-182779981-612x612.jpg",
+      github: "https://github.com/mahmud014/The-Dragon-News",
+      live: "https://dragon-news-37713.web.app/"
     },
     {
-      title: "Task Manager",
-      description: "Collaborative task management tool with real-time updates and team features.",
-      tech: ["React", "Express", "Socket.io"],
+      title: "Skills Course App",
+      description: "A learning platform offering skill-based courses with video lessons, quizzes, progress tracking, and certificate generation for students..",
+      tech: ["React", "Firebase", "Tailwind"],
       image: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=800&h=600&fit=crop",
-      github: "#",
-      live: "#"
+      github: "https://github.com/mahmud014/Skill-Hive",
+      live: "https://skill-hive-gold.vercel.app/"
     },
     {
-      title: "Recipe Finder",
-      description: "Search and discover recipes from various cuisines with ingredient filters and nutrition info.",
+      title: "Restaurant App",
+      description: "A modern restaurant app with online menu browsing, food ordering, table reservations, and real-time order tracking.",
       tech: ["React", "API", "CSS"],
-      image: "https://images.unsplash.com/photo-1495521821757-a1efb6729352?w=800&h=600&fit=crop",
-      github: "#",
-      live: "#"
+      image: "https://i.ibb.co.com/8VmT9wK/istockphoto-172446562-612x612.jpg",
+      github: "https://github.com/mahmud014/DishDive-restaurant-App",
+      live: "https://dishdive-e699b.web.app/"
     },
     {
-      title: "Fitness Tracker",
-      description: "Track workouts, calories, and fitness goals with charts and progress visualization.",
+      title: "Emergency Hotline",
+      description: "A quick-access emergency support app with one-tap calling, location sharing, and essential hotline numbers for police, fire service, and medical services.",
       tech: ["React", "Chart.js", "LocalStorage"],
       image: "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=800&h=600&fit=crop",
-      github: "#",
-      live: "#"
+      github: "https://github.com/mahmud014/Emergency-Hotline-Assignment-5",
+      live: "https://emergency-hotline-two.vercel.app/"
     },
     {
-      title: "Chat Application",
-      description: "Real-time messaging app with group chats, file sharing, and emoji support.",
+      title: "Mobile Pay App",
+      description: "A secure and user-friendly mobile payment system for sending money, mobile recharge, bill payments, and transaction tracking.",
       tech: ["React", "Firebase", "Tailwind"],
-      image: "https://images.unsplash.com/photo-1611606063065-ee7946f0787a?w=800&h=600&fit=crop",
-      github: "#",
-      live: "#"
+      image: "https://i.ibb.co.com/rRPp0qfy/photo-1651055705032-d4187855b004.jpg",
+      github: "https://github.com/mahmud014/mobile-payoo",
+      live: "https://mobile-payoo.vercel.app/"
     },
     {
-      title: "Movie Database",
-      description: "Browse movies, TV shows with ratings, reviews, and watchlist functionality.",
+      title: "Learning App",
+      description: "Learn English easily with vocabulary practice, daily lessons, quizzes, and real-life examples — designed for Bangla speakers.",
       tech: ["React", "TMDB API", "Tailwind"],
-      image: "https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=800&h=600&fit=crop",
-      github: "#",
-      live: "#"
+      image: "https://i.ibb.co.com/sdNLPPyH/istockphoto-2208643645-612x612.webp",
+      github: "https://github.com/mahmud014/English-janala-app",
+      live: "https://english-janala-app.vercel.app/"
     }
   ]
 
