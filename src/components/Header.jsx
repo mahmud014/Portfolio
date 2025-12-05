@@ -111,93 +111,98 @@ function Header() {
         </div>
       </nav>
 
-      {/* Mobile Menu */}
+      {/* Mobile Menu - Compact Version */}
       <AnimatePresence>
         {isMobileMenuOpen && (
           <motion.div
-            initial={{ opacity: 0, x: '100%' }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: '100%' }}
-            transition={{ duration: 0.3 }}
-            className="fixed inset-0 bg-primary/95 backdrop-blur-lg z-40 lg:hidden"
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 0.2 }}
+            className="fixed top-20 left-4 right-4 bg-primary/95 backdrop-blur-lg rounded-2xl shadow-2xl z-40 lg:hidden p-4"
           >
-            <div className="flex flex-col items-center justify-center h-full space-y-8">
+            <div className="flex flex-col space-y-2">
               <motion.button
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.1 }}
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: 0.05 }}
                 onClick={() => scrollToSection('home')}
-                className={`text-2xl font-semibold px-8 py-3 rounded-full transition-all ${
+                className={`text-base font-medium px-4 py-2 rounded-lg transition-all text-left ${
                   activeSection === 'home'
                     ? 'bg-secondary text-primary'
-                    : 'text-white hover:bg-secondary hover:text-primary'
+                    : 'text-white hover:bg-secondary/20'
                 }`}
               >
                 Home
               </motion.button>
               <motion.button
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.2 }}
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: 0.1 }}
                 onClick={() => scrollToSection('about')}
-                className={`text-2xl font-semibold px-8 py-3 rounded-full transition-all ${
+                className={`text-base font-medium px-4 py-2 rounded-lg transition-all text-left ${
                   activeSection === 'about'
                     ? 'bg-secondary text-primary'
-                    : 'text-white hover:bg-secondary hover:text-primary'
+                    : 'text-white hover:bg-secondary/20'
                 }`}
               >
                 About
               </motion.button>
               <motion.button
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.3 }}
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: 0.15 }}
                 onClick={() => scrollToSection('skills')}
-                className={`text-2xl font-semibold px-8 py-3 rounded-full transition-all ${
+                className={`text-base font-medium px-4 py-2 rounded-lg transition-all text-left ${
                   activeSection === 'skills'
                     ? 'bg-secondary text-primary'
-                    : 'text-white hover:bg-secondary hover:text-primary'
+                    : 'text-white hover:bg-secondary/20'
                 }`}
               >
                 Skills
               </motion.button>
               <motion.button
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.4 }}
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: 0.2 }}
                 onClick={() => scrollToSection('projects')}
-                className={`text-2xl font-semibold px-8 py-3 rounded-full transition-all ${
+                className={`text-base font-medium px-4 py-2 rounded-lg transition-all text-left ${
                   activeSection === 'projects'
                     ? 'bg-secondary text-primary'
-                    : 'text-white hover:bg-secondary hover:text-primary'
+                    : 'text-white hover:bg-secondary/20'
                 }`}
               >
                 Projects
               </motion.button>
               <motion.button
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.5 }}
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: 0.25 }}
                 onClick={() => scrollToSection('contact')}
-                className={`text-2xl font-semibold px-8 py-3 rounded-full transition-all ${
+                className={`text-base font-medium px-4 py-2 rounded-lg transition-all text-left ${
                   activeSection === 'contact'
                     ? 'bg-secondary text-primary'
-                    : 'text-white hover:bg-secondary hover:text-primary'
+                    : 'text-white hover:bg-secondary/20'
                 }`}
               >
                 Contact
               </motion.button>
-              <motion.a
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.6 }}
-                className="bg-secondary text-primary font-semibold px-8 py-3 rounded-full shadow-lg mt-4"
-                href="https://drive.google.com/file/d/14caD1rlRM_QEF0NfG7xy_kat3-C9Eczm/view?usp=sharing"
-                target="_blank"
-                rel="noopener noreferrer"
+              <motion.div
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: 0.3 }}
+                className="pt-2 border-t border-white/20"
               >
-                Download CV
-              </motion.a>
+                <a
+                  className="block text-center bg-secondary text-primary font-semibold px-4 py-2 rounded-lg"
+                  href="https://drive.google.com/file/d/14caD1rlRM_QEF0NfG7xy_kat3-C9Eczm/view?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Download CV
+                </a>
+              </motion.div>
             </div>
           </motion.div>
         )}
