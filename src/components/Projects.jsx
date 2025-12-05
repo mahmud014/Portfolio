@@ -71,7 +71,7 @@ const Projects = () => {
       title: "Emergency Hotline",
       description: "A quick-access emergency support app with one-tap calling, location sharing, and essential hotline numbers for police, fire service, and medical services.",
       tech: ["React", "Chart.js", "LocalStorage"],
-      image: "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=800&h=600&fit=crop",
+      image: "https://i.ibb.co.com/VcD3VCF0/istockphoto-1363270862-612x612.jpg",
       github: "https://github.com/mahmud014/Emergency-Hotline-Assignment-5",
       live: "https://emergency-hotline-two.vercel.app/"
     },
