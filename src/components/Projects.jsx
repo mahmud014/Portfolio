@@ -203,7 +203,9 @@ const Projects = () => {
                 </div>
                 <div className="flex gap-4">
                   <motion.a 
-                    href={project.github} 
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="flex items-center gap-2 bg-primary text-white px-4 py-2 rounded-full font-semibold"
                     whileHover={{ scale: 1.05, boxShadow: "0 5px 15px rgba(13, 36, 38, 0.3)" }}
                     whileTap={{ scale: 0.95 }}
@@ -211,7 +213,9 @@ const Projects = () => {
                     <FaGithub className="text-lg" /> Code
                   </motion.a>
                   <motion.a 
-                    href={project.live} 
+                    href={project.live}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="flex items-center gap-2 bg-secondary text-primary px-4 py-2 rounded-full font-semibold"
                     whileHover={{ scale: 1.05, boxShadow: "0 5px 15px rgba(174, 255, 114, 0.3)" }}
                     whileTap={{ scale: 0.95 }}
