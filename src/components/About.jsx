@@ -154,7 +154,9 @@ const About = () => {
               </motion.div>
               <div>
                 <p className="text-sm text-gray-500 dark:text-gray-400">Email Us At</p>
-                <p className="text-lg font-semibold text-gray-900 dark:text-white">anik955720@gmail.com</p>
+                <a href="mailto:anik955720@gmail.com" className="text-lg font-semibold text-gray-900 dark:text-white hover:text-secondary transition-colors">
+                  anik955720@gmail.com
+                </a>
               </div>
             </motion.div>
 
@@ -171,7 +173,9 @@ const About = () => {
               </motion.div>
               <div>
                 <p className="text-sm text-gray-500 dark:text-gray-400">Phone Number</p>
-                <p className="text-lg font-semibold text-gray-900 dark:text-white">+880 1799-649027</p>
+                <a href="tel:+8801799649027" className="text-lg font-semibold text-gray-900 dark:text-white hover:text-secondary transition-colors">
+                  +880 1799-649027
+                </a>
               </div>
             </motion.div>
           </motion.div>
@@ -192,7 +196,7 @@ const About = () => {
                 animate={isInView ? { scale: 1 } : { scale: 0 }}
                 transition={{ duration: 0.5, delay: 0.9, type: "spring" }}
               >
-                1+
+                01+
               </motion.p>
               <p className="text-gray-600 dark:text-gray-400 font-medium mt-2">Years Experience</p>
             </motion.div>
