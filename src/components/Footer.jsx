@@ -1,4 +1,5 @@
 import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope, FaHeart } from "react-icons/fa"
+import { motion } from "framer-motion"
 
 const Footer = () => {
   const scrollToSection = (id) => {
@@ -7,6 +8,13 @@ const Footer = () => {
       element.scrollIntoView({ behavior: 'smooth', block: 'start' })
     }
   }
+
+  const socialLinks = [
+    { icon: FaGithub, href: "https://github.com/mahmud014", label: "GitHub" },
+    { icon: FaLinkedin, href: "https://www.linkedin.com/in/shukurmahmud/", label: "LinkedIn" },
+    { icon: FaTwitter, href: "https://x.com/MdShukurMahmud3", label: "Twitter" },
+    { icon: FaEnvelope, href: "mailto:anik955720@gmail.com", label: "Email" }
+  ]
 
   return (
     <footer className="w-full bg-[#1f2937] text-white mt-20">
@@ -21,18 +29,28 @@ const Footer = () => {
               Fresh graduate passionate about creating beautiful web experiences. Let's build something amazing together!
             </p>
             <div className="flex gap-4">
-              <a href="https://github.com/mahmud014" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-secondary hover:text-primary transition-all">
-                <FaGithub className="text-xl" />
-              </a>
-              <a href="https://www.linkedin.com/in/shukurmahmud/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-secondary hover:text-primary transition-all">
-                <FaLinkedin className="text-xl" />
-              </a>
-              <a href="https://x.com/MdShukurMahmud3" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-secondary hover:text-primary transition-all">
-                <FaTwitter className="text-xl" />
-              </a>
-              <a href="mailto:anik955720@gmail.com" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-secondary hover:text-primary transition-all">
-                <FaEnvelope className="text-xl" />
-              </a>
+              {socialLinks.map((social, index) => (
+                <motion.div
+                  key={index}
+                  className="relative group"
+                  whileHover={{ y: -5 }}
+                  transition={{ duration: 0.2 }}
+                >
+                  <a
+                    href={social.href}
+                    target={social.href.startsWith('mailto:') ? '_self' : '_blank'}
+                    rel="noopener noreferrer"
+                    className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-secondary hover:text-primary transition-all"
+                  >
+                    <social.icon className="text-xl" />
+                  </a>
+                  {/* Tooltip */}
+                  <div className="absolute -top-10 left-1/2 -translate-x-1/2 bg-secondary text-primary px-3 py-1 rounded-lg text-sm font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap pointer-events-none">
+                    {social.label}
+                    <div className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-2 h-2 bg-secondary rotate-45"></div>
+                  </div>
+                </motion.div>
+              ))}
             </div>
           </div>
 
@@ -80,7 +98,12 @@ const Footer = () => {
             Copyright © {new Date().getFullYear()} Shukur. All rights reserved.
           </p>
           <p className="text-gray-300 text-sm flex items-center gap-2">
-            Made with <FaHeart className="text-secondary" /> by Shukur
+            Made with <motion.span
+              animate={{ scale: [1, 1.2, 1] }}
+              transition={{ duration: 1, repeat: Infinity, ease: "easeInOut" }}
+            >
+              <FaHeart className="text-secondary" />
+            </motion.span> by Shukur
           </p>
         </div>
       </div>
