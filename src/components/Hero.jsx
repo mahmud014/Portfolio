@@ -57,7 +57,7 @@ function Hero() {
           >
             Hi, I'm <span className="text-gradient">Shukur</span>
             <br />
-            <span className="text-3xl md:text-4xl lg:text-5xl">Aspiring Full-Stack Developer</span>
+            <span className="text-3xl md:text-4xl lg:text-5xl">Full-Stack Developer</span>
           </motion.h1>
 
           {/* Description */}
