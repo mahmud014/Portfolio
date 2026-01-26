@@ -29,7 +29,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark">
-      <body className={`${poppins.variable} font-display antialiased bg-black text-white`}>
+      <body className={`${poppins.variable} font-display antialiased bg-background-dark text-white`}>
         {children}
       </body>
     </html>
