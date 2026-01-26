@@ -156,7 +156,7 @@ const Hero: React.FC<HeroProps> = () => {
               <Image
                 alt="Shukur - Aspiring Full-Stack Developer"
                 className="w-full h-full object-cover"
-                src="https://i.postimg.cc/L4gsjZTL/photo.png"
+                src="/Shukur-pic.png"
                 width={320}
                 height={320}
                 priority

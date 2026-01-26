@@ -76,7 +76,7 @@ const About: React.FC<AboutProps> = () => {
               }}
             >
               <Image 
-                src="https://i.postimg.cc/L4gsjZTL/photo.png" 
+                src="/Shukur-pic.png" 
                 alt="Shukur" 
                 className="w-full h-full object-cover"
                 width={320}
@@ -209,8 +209,7 @@ const About: React.FC<AboutProps> = () => {
 
             <motion.a 
               className="flex cursor-pointer items-center gap-2 bg-secondary text-primary font-semibold px-6 py-3 rounded-full shadow-lg" 
-              href="https://drive.google.com/file/d/14caD1rlRM_QEF0NfG7xy_kat3-C9Eczm/view?usp=sharing" 
-              target="_blank" 
+              href="/Shukur_Mahmud_resume.pdf" download 
               rel="noopener noreferrer"
               whileHover={{ 
                 scale: 1.05,

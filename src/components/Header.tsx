@@ -70,14 +70,12 @@ const Header: React.FC<HeaderProps> = () => {
           ))}
         </div>
         <div className="flex items-center space-x-4">
-          <a 
-            className="hidden md:block bg-secondary text-primary font-semibold px-6 py-3 rounded-full shadow-lg hover:scale-105 transition-all" 
-            href="https://drive.google.com/file/d/14caD1rlRM_QEF0NfG7xy_kat3-C9Eczm/view?usp=sharing" 
-            target="_blank" 
-            rel="noopener noreferrer"
-          >
+          <a href="/Shukur_Mahmud_CV.pdf" download 
+          className="hidden md:block bg-secondary text-primary font-semibold px-6 py-3 rounded-full shadow-lg hover:scale-105 transition-all" 
+          rel="noopener noreferrer">
             Download CV
           </a>
+
           <button 
             className="lg:hidden p-2 z-50"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -126,8 +124,7 @@ const Header: React.FC<HeaderProps> = () => {
               >
                 <a
                   className="block text-center bg-secondary text-primary font-semibold px-4 py-2 rounded-lg"
-                  href="https://drive.google.com/file/d/14caD1rlRM_QEF0NfG7xy_kat3-C9Eczm/view?usp=sharing"
-                  target="_blank"
+                  href="/Shukur_Mahmud_CV.pdf" download
                   rel="noopener noreferrer"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >

@@ -28,8 +28,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark">
-      <body className={`${poppins.variable} font-display antialiased bg-background-dark text-white`}>
+    <html lang="en" className="dark" suppressHydrationWarning>
+      <body suppressHydrationWarning className={`${poppins.variable} font-display antialiased bg-background-dark text-white`}>
         {children}
       </body>
     </html>

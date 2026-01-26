@@ -138,8 +138,7 @@ const Contact: React.FC<ContactProps> = () => {
 
           {/* Resume Badge */}
           <motion.a 
-            href="https://drive.google.com/file/d/14caD1rlRM_QEF0NfG7xy_kat3-C9Eczm/view?usp=sharing" 
-            target="_blank" 
+            href="/Shukur_Mahmud_resume.pdf" download 
             rel="noopener noreferrer" 
             className="relative w-32 h-32 mt-8 block cursor-pointer group"
             initial={{ opacity: 0, scale: 0 }}
