@@ -8,36 +8,16 @@ interface ContactProps {}
 
 const Contact: React.FC<ContactProps> = () => {
   const [showSuccess, setShowSuccess] = useState<boolean>(false)
-  const [isSubmitting, setIsSubmitting] = useState<boolean>(false)
   const ref = useRef<HTMLElement>(null)
   const isInView = useInView(ref, { once: true, margin: "-100px" })
 
-  const handleSubmit = async (e: FormEvent<HTMLFormElement>): Promise<void> => {
-    e.preventDefault()
-    setIsSubmitting(true)
-
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+    setShowSuccess(true)
     const form = e.target as HTMLFormElement
-    const formData = new FormData(form)
-
-    try {
-      const response = await fetch('https://formsubmit.co/anik955720@gmail.com', {
-        method: 'POST',
-        body: formData,
-        headers: {
-          'Accept': 'application/json'
-        }
-      })
-
-      if (response.ok) {
-        setShowSuccess(true)
-        form.reset()
-        setTimeout(() => setShowSuccess(false), 5000)
-      }
-    } catch (error) {
-      console.error('Form submission error:', error)
-    } finally {
-      setIsSubmitting(false)
-    }
+    setTimeout(() => {
+      setShowSuccess(false)
+      form.reset()
+    }, 5000)
   }
 
   return (
@@ -182,10 +162,15 @@ const Contact: React.FC<ContactProps> = () => {
             Fill out the form below to connect with me. I&apos;ll get back to you soon to discuss your project or answer any questions.
           </p>
 
-          <form onSubmit={handleSubmit} className="space-y-6">
+          <form
+            onSubmit={handleSubmit}
+            action="https://formsubmit.co/anik955720@gmail.com"
+            method="POST"
+            className="space-y-6"
+          >
             <input type="hidden" name="_subject" value="New Contact Form Submission from Portfolio" />
-            <input type="hidden" name="_captcha" value="false" />
-            
+            <input type="hidden" name="_captcha" value="true" />
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
                 <label className="block text-sm text-gray-400 mb-2">First Name</label>
@@ -250,12 +235,11 @@ const Contact: React.FC<ContactProps> = () => {
 
             <motion.button 
               type="submit" 
-              disabled={isSubmitting}
-              className="bg-secondary text-primary font-bold px-8 py-4 rounded-full disabled:opacity-50 disabled:cursor-not-allowed"
+              className="bg-secondary text-primary font-bold px-8 py-4 rounded-full"
               whileHover={{ scale: 1.05, boxShadow: "0 10px 30px rgba(174, 255, 114, 0.3)" }}
               whileTap={{ scale: 0.95 }}
             >
-              {isSubmitting ? 'Sending...' : 'Submit Message'}
+              Submit Message
             </motion.button>
           </form>
         </motion.div>
