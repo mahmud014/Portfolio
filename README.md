@@ -1,6 +1,6 @@
 # 🚀 Shukur Mahmud - Portfolio Website
 
-A modern, responsive portfolio website built with React, showcasing my skills, projects, and experience as a Full-Stack Developer.
+A modern, responsive portfolio website built with **Next.js + TypeScript**, showcasing my skills, projects, and experience as a Full-Stack Developer.
 
 ![Portfolio Preview](https://i.postimg.cc/ZnRTbmzJ/Desktop.png)
 
@@ -17,13 +17,13 @@ A modern, responsive portfolio website built with React, showcasing my skills, p
 - 🎠 **Project Carousel** - Interactive Swiper.js carousel for projects
 - 📧 **Contact Form** - Functional contact form with FormSubmit integration
 - 🌙 **Dark Mode** - Eye-friendly dark theme
-- ⚡ **Fast Performance** - Optimized with Vite
+- ⚡ **Fast Performance** - Optimized with Next.js & Vercel
 - 🎯 **Smooth Scrolling** - Seamless navigation between sections
 
 ## 🛠️ Built With
 
-- **Frontend Framework:** React 18
-- **Build Tool:** Vite
+- **Framework:** Next.js 14 + TypeScript
+- **Frontend Library:** React 18
 - **Styling:** Tailwind CSS
 - **Animations:** Framer Motion, GSAP
 - **Carousel:** Swiper.js
@@ -36,26 +36,33 @@ A modern, responsive portfolio website built with React, showcasing my skills, p
 ```
 Portfolio/
 ├── public/
-│   ├── favicon.svg
-│   └── _redirects
+│ ├── favicon.svg
+│ └── images/
 ├── src/
-│   ├── components/
-│   │   ├── Header.jsx
-│   │   ├── Hero.jsx
-│   │   ├── SkillsMarquee.jsx
-│   │   ├── Skills.jsx
-│   │   ├── About.jsx
-│   │   ├── Projects.jsx
-│   │   ├── Contact.jsx
-│   │   └── Footer.jsx
-│   ├── App.jsx
-│   ├── main.jsx
-│   └── index.css
-├── index.html
+│ ├── app/
+│ │ ├── page.tsx # Home page
+│ │ └── globals.css
+│ ├── components/
+│ │ ├── Header.tsx
+│ │ ├── Hero.tsx
+│ │ ├── SkillsMarquee.tsx
+│ │ ├── Skills.tsx
+│ │ ├── About.tsx
+│ │ ├── Projects.tsx
+│ │ ├── Contact.tsx
+│ │ ├── Footer.tsx
+│ │ └── SocialIcons.tsx
+│ ├── context/
+│ │ └── LanguageContext.tsx
+│ ├── utils/
+│ │ └── socialLinks.ts
+│ └── styles/
+│ └── globals.css
+├── next.config.js
 ├── package.json
 ├── tailwind.config.js
-├── vite.config.js
-└── netlify.toml
+├── tsconfig.json
+└── vercel.json
 ```
 
 ## 🚀 Getting Started
@@ -87,15 +94,16 @@ npm install
 npm run dev
 ```
 
-5. Open your browser and visit `http://localhost:5173`
+5. Open your browser and visit `http://localhost:3000`
 
 ## 📦 Build for Production
 
 ```bash
 npm run build
+npm run start
 ```
 
-The build files will be generated in the `dist` folder.
+The build files will be generated in the `.next` folder.
 
 ## 🌐 Deployment
 
@@ -137,12 +145,12 @@ The contact form uses FormSubmit. To activate:
 
 Edit the following files to customize with your information:
 
-- `src/components/Hero.jsx` - Name, title, description
-- `src/components/About.jsx` - About text, contact info
-- `src/components/Skills.jsx` - Your skills and proficiency levels
-- `src/components/Projects.jsx` - Your projects
-- `src/components/Contact.jsx` - Email address
-- `src/components/Footer.jsx` - Social media links
+- `src/components/Hero.tsx` - Name, title, description
+- `src/components/About.tsx` - About text, contact info
+- `src/components/Skills.tsx` - Your skills and proficiency levels
+- `src/components/Projects.tsx` - Your projects
+- `src/components/Contact.tsx` - Email address
+- `src/components/Footer.tsx` - Social media links
 
 ### Update Colors
 
