@@ -1,8 +1,9 @@
 'use client'
 
-import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope, FaHeart } from "react-icons/fa"
+import { FaGithub, FaLinkedin, FaEnvelope, FaHeart } from "react-icons/fa"
 import { motion } from "framer-motion"
 import { IconType } from "react-icons"
+import { BsTwitterX } from "react-icons/bs"
 
 interface SocialLink {
   icon: IconType
@@ -23,7 +24,7 @@ const Footer: React.FC<FooterProps> = () => {
   const socialLinks: SocialLink[] = [
     { icon: FaGithub, href: "https://github.com/mahmud014", label: "GitHub" },
     { icon: FaLinkedin, href: "https://www.linkedin.com/in/shukurmahmud/", label: "LinkedIn" },
-    { icon: FaTwitter, href: "https://x.com/MdShukurMahmud3", label: "Twitter" },
+    { icon: BsTwitterX, href: "https://x.com/MdShukurMahmud3", label: "Twitter" },
     { icon: FaEnvelope, href: "mailto:anik955720@gmail.com", label: "Email" }
   ]
 

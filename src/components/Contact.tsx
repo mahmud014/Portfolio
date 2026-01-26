@@ -1,9 +1,10 @@
 'use client'
 
-import { FaMapMarkerAlt, FaPhone, FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa"
+import { FaMapMarkerAlt, FaPhone, FaGithub, FaLinkedin } from "react-icons/fa"
 import { useState, useRef, FormEvent } from "react"
-import { motion, useInView } from "framer-motion"
+import {  motion, useInView } from "framer-motion"
 import toast from "react-hot-toast"
+import { BsTwitterX } from "react-icons/bs"
 
 interface ContactProps {}
 
@@ -46,6 +47,12 @@ const Contact: React.FC<ContactProps> = () => {
       setIsSubmitting(false)
     }
   }
+
+  const socialLinks = [
+  { href: "https://github.com/mahmud014", icon: FaGithub, label: "GitHub" },
+  { href: "https://www.linkedin.com/in/shukurmahmud/", icon: FaLinkedin, label: "LinkedIn" },
+  { href: "https://x.com/MdShukurMahmud3", icon: BsTwitterX, label: "Twitter" },
+];
 
   return (
     <section ref={ref} className="w-full max-w-7xl mx-auto py-20">
@@ -186,17 +193,36 @@ const Contact: React.FC<ContactProps> = () => {
       </div>
 
       {/* Social Links */}
-      <motion.div className="flex justify-center gap-4 mt-16" initial={{ opacity: 0, y: 30 }} animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }} transition={{ duration: 0.6, delay: 0.6 }}>
-        <motion.a href="https://github.com/mahmud014" target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-white dark:bg-gray-800 rounded-full flex items-center justify-center shadow-lg" whileHover={{ scale: 1.2, backgroundColor: "#AEFF72", color: "#0D2426" }} whileTap={{ scale: 0.9 }}>
-          <FaGithub className="text-xl" />
-        </motion.a>
-        <motion.a href="https://www.linkedin.com/in/shukurmahmud/" target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-white dark:bg-gray-800 rounded-full flex items-center justify-center shadow-lg" whileHover={{ scale: 1.2, backgroundColor: "#AEFF72", color: "#0D2426" }} whileTap={{ scale: 0.9 }}>
-          <FaLinkedin className="text-xl" />
-        </motion.a>
-        <motion.a href="https://x.com/MdShukurMahmud3" target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-white dark:bg-gray-800 rounded-full flex items-center justify-center shadow-lg" whileHover={{ scale: 1.2, backgroundColor: "#AEFF72", color: "#0D2426" }} whileTap={{ scale: 0.9 }}>
-          <FaTwitter className="text-xl" />
-        </motion.a>
-      </motion.div>
+      <motion.div
+      className="flex justify-center gap-4 mt-16"
+      initial={{ opacity: 0, y: 30 }}
+      animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+      transition={{ duration: 0.6, delay: 0.6 }}
+    >
+      {socialLinks.map((social) => {
+        const Icon = social.icon;
+        return (
+          <div key={social.label} className="relative flex flex-col items-center group">
+            <motion.a
+              href={social.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-12 h-12 bg-white dark:bg-gray-800 rounded-full flex items-center justify-center shadow-lg"
+              whileHover={{ scale: 1.2, backgroundColor: "#AEFF72", color: "#0D2426" }}
+              whileTap={{ scale: 0.9 }}
+            >
+              <Icon className="text-xl" />
+            </motion.a>
+
+            {/* Tooltip */}
+            <div className="absolute -top-10 left-1/2 -translate-x-1/2 bg-secondary text-primary px-3 py-1 rounded-lg text-sm font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap pointer-events-none">
+              {social.label}
+              <div className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-2 h-2 bg-secondary rotate-45"></div>
+            </div>
+          </div>
+        );
+      })}
+    </motion.div>
     </section>
   )
 }
